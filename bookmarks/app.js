@@ -1,5 +1,3 @@
-//= require ./app.js
-
 (function(exports) {
 
   Zendesk.Apps.BookmarksApp = Zendesk.Apps.App.extend({
