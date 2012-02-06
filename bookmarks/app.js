@@ -2,8 +2,8 @@
 
 (function(exports) {
 
-  Zendesk.Apps.BookmarksApp = Zendesk.Apps.App.extend({
-    location: Zendesk.Apps.Site.TICKET_PROPERTIES,
+  ZendeskApps.BookmarksApp = ZendeskApps.App.extend({
+    location: ZendeskApps.Site.TICKET_PROPERTIES,
     appID: '/apps/01-bookmarks/versions/1.0.0',
     name: 'Bookmarks',
     defaultSheet: 'loading',
