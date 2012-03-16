@@ -42,7 +42,7 @@
     },
 
     dependencies: {
-      ticketID:       'Zendesk.currentTicket.id'
+      ticketID: 'workspace.ticket.id'
     },
 
     events: {
