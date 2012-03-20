@@ -46,6 +46,8 @@
     },
 
     events: {
+      'activated': 'requestBookmarks',
+
       'bookmarks.done': function(e, data) {
         this.sheet('bookmarks')
           .render('main', { bookmarks: data.bookmarks })
@@ -73,7 +75,7 @@
       }
     },
 
-    launch: function(host, config) {
+    requestBookmarks: function() {
       this.request('bookmarks').perform();
     }
   });
