@@ -9,19 +9,21 @@
     defaultSheet: 'loading',
 
     templates: {
-      main: '<div data-sheet-name="loading" class="loading">' +
-            '  <h3>Bookmarks</h3>' +
-            '  Loading&hellip;' +
-            '</div>' +
-            '<div data-sheet-name="bookmarks">' +
-            '  <h3>Bookmarks</h3>' +
-            '  <ul>' +
-            '    {{#bookmarks}}<li>' +
-            '      <a href="#/tickets/{{ticket.nice_id}}">{{ticket.subject}}</a>' +
-            '    </li>{{/bookmarks}}' +
-            '  </ul>' +
-            '  {{^bookmarks}}None{{/bookmarks}}' +
-            '  <button class="btn bookmark">Bookmark This Ticket</button>' +
+      main: '<div class="bookmarks_app">' +
+            '  <div data-sheet-name="loading" class="loading">' +
+            '    <h3>Bookmarks</h3><hr/>' +
+            '   Loading&hellip;' +
+            '  </div>' +
+            '  <div data-sheet-name="bookmarks">' +
+            '    <h3>Bookmarks</h3><hr/>' +
+            '    <ul>' +
+            '      {{#bookmarks}}<li>' +
+            '        <a href="#/tickets/{{ticket.nice_id}}">{{ticket.subject}}</a>' +
+            '      </li>{{/bookmarks}}' +
+            '    </ul>' +
+            '    {{^bookmarks}}None{{/bookmarks}}' +
+            '    <button class="btn bookmark">Bookmark This Ticket</button>' +
+            '  </div>' +
             '</div>'
     },
 
