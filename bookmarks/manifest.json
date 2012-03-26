@@ -1,3 +1,4 @@
 {
-  "name": "Bookmarks"
+  "name": "Bookmarks",
+  "singleInstall": true
 }
