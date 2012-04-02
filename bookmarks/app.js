@@ -1,8 +1,6 @@
-//= require ./app.js
-
 (function(exports) {
 
-  ZendeskApps.BookmarksApp = ZendeskApps.App.extend({
+  return ZendeskApps.App.extend({
     location: ZendeskApps.Site.TICKET_PROPERTIES,
     appID: '/apps/01-bookmarks/versions/1.0.0',
     name: 'Bookmarks',
