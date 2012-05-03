@@ -1,3 +1,15 @@
 {
-  "description": "Quickly access bookmarked tickets. Syncs with the iPad app."
+  "app": {
+    "configuration": {
+      "name": { "label": "Name" }
+    },
+
+   "description": "Quickly access bookmarked tickets. Syncs with the iPad app.",
+   "name":        "Bookmarks"
+  },
+
+  "bookmark_this_ticket": "Bookmark This Ticket",
+  "loading":              "Loading",
+  "none":                 "None",
+  "title":                "Bookmarks"
 }
