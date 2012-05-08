@@ -1,9 +1,5 @@
 {
   "app": {
-    "configuration": {
-      "name": { "label": "Name" }
-    },
-
    "description": "Access bookmarked tickets from our iPad & iPhone app",
    "name":        "Bookmarks"
   },
