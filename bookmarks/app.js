@@ -8,74 +8,73 @@
     templates: {
       main: '<div class="bookmarks_app">' +
             '  <div data-sheet-name="loading" class="loading">' +
-            '    <h3>{{I18n.title}}</h3><hr/>' +
-            '   {{I18n.loading}}&hellip;' +
+            '    <h3>{{t title}}</h3><hr/>' +
+            '   {{t loading}}&hellip;' +
             '  </div>' +
             '  <div data-sheet-name="bookmarks">' +
-            '    <h3>{{I18n.title}}</h3><hr/>' +
+            '    <h3>{{t title}}</h3><hr/>' +
             '    <ul>' +
             '      {{#bookmarks}}<li>' +
-            '        <a href="#/tickets/{{ticket.nice_id}}">{{ticket.subject}}</a>' +
+            '        <a href="#/tickets/{{ticketID}}">{{ticketSubject}}</a>' +
             '      </li>{{/bookmarks}}' +
             '    </ul>' +
-            '    {{^bookmarks}}{{I18n.none}}{{/bookmarks}}' +
-            '    <button class="btn bookmark">{{I18n.bookmark_this_ticket}}</button>' +
+            '    {{^bookmarks}}{{t none}}{{/bookmarks}}' +
+            '    <button class="btn bookmark">{{t bookmark_this_ticket}}</button>' +
             '  </div>' +
             '</div>'
     },
 
     requests: {
-      bookmarks: {
+      fetchBookmarks: {
         url: '/api/v1/bookmarks.json'
       },
 
-      add_bookmark: function() {
+      addBookmark: function() {
         return {
           url: '/api/v1/bookmarks.json',
           type: 'POST',
           data: {
-            ticket_id: this.deps.ticketID
+            ticket_id: App.depdendency('ticketID')
           }
         };
       }
     },
 
     dependencies: {
-      ticketID: 'workspace.ticket.id'
+      ticketID: 'ticket.id',
+      ticketSubject: 'ticket.subject'
     },
 
     events: {
-      'activated': 'requestBookmarks',
+      'app.activated': 'requestBookmarks',
 
-      'bookmarks.done': function(e, data) {
-        this.sheet('bookmarks')
-          .render('main', { bookmarks: data.bookmarks })
-          .show();
+      'fetchBookmarks.done': function(e, data) {
+        App.switchTo('list', { bookmarks: data.bookmarks });
       },
 
-      'add_bookmark.success': function() {
+      'addBookmark.success': function() {
         this.services.notify('Bookmarked ticket #%@'.fmt(this.deps.ticketID));
       },
 
-      'add_bookmark.fail': function() {
+      'addBookmark.fail': function() {
         this.services.notify('Failed to bookmark ticket #%@'.fmt(this.deps.ticketID), 'error');
       },
 
-      'click %default': function() {
-        this.request('bookmarks').perform();
+      'click %welcome': function() {
+        App.ajax('fetchBookmarks');
       },
 
       'click .bookmark': function() {
-        this.request('add_bookmark').perform();
+        App.ajax('addBookmark');
       },
 
-      'add_bookmark.done': function(e, data) {
-        this.request('bookmarks').perform();
+      'addBookmark.done': function(e, data) {
+        App.ajax('fetchBookmarks');
       }
     },
 
     requestBookmarks: function() {
-      this.request('bookmarks').perform();
+      App.ajax('fetchBookmarks');
     }
   });
 
