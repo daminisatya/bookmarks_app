@@ -5,25 +5,6 @@
 
     defaultState: 'loading',
 
-    templates1: {
-      main: '<div class="bookmarks_app">' +
-            '  <div data-sheet-name="loading" class="loading">' +
-            '    <h3>{{t title}}</h3><hr/>' +
-            '   {{t loading}}&hellip;' +
-            '  </div>' +
-            '  <div data-sheet-name="bookmarks">' +
-            '    <h3>{{t title}}</h3><hr/>' +
-            '    <ul>' +
-            '      {{#bookmarks}}<li>' +
-            '        <a href="#/tickets/{{ticketID}}">{{ticketSubject}}</a>' +
-            '      </li>{{/bookmarks}}' +
-            '    </ul>' +
-            '    {{^bookmarks}}{{t none}}{{/bookmarks}}' +
-            '    <button class="btn bookmark">{{t bookmark_this_ticket}}</button>' +
-            '  </div>' +
-            '</div>'
-    },
-
     requests: {
       fetchBookmarks: {
         url: '/api/v1/bookmarks.json'
