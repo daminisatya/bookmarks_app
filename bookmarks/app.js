@@ -28,13 +28,13 @@
     events: {
       'activated': 'requestBookmarks',
 
-      'bookmarks.done': function(e, data) {
+      'bookmarks.always': function(e, data) {
         this.sheet('bookmarks')
           .render('main', { bookmarks: data.bookmarks })
           .show();
       },
 
-      'add_bookmark.success': function() {
+      'add_bookmark.done': function() {
         this.services.notify('Bookmarked ticket #%@'.fmt(this.deps.ticketID));
       },
 
@@ -50,7 +50,7 @@
         this.request('add_bookmark').perform();
       },
 
-      'add_bookmark.done': function(e, data) {
+      'add_bookmark.always': function(e, data) {
         this.request('bookmarks').perform();
       }
     },
