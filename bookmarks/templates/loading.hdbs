@@ -1,0 +1,4 @@
+<div data-sheet-name="loading" class="loading">
+  <h3>{{I18n.title}}</h3><hr/>
+ {{I18n.loading}}&hellip;
+</div>

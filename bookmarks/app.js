@@ -3,9 +3,9 @@
   return ZendeskApps.defineApp(ZendeskApps.Site.TICKET_PROPERTIES, {
     appID: '/apps/01-bookmarks/versions/1.0.0',
 
-    defaultSheet: 'loading',
+    defaultState: 'loading',
 
-    templates: {
+    templates1: {
       main: '<div class="bookmarks_app">' +
             '  <div data-sheet-name="loading" class="loading">' +
             '    <h3>{{t title}}</h3><hr/>' +
@@ -34,7 +34,7 @@
           url: '/api/v1/bookmarks.json',
           type: 'POST',
           data: {
-            ticket_id: App.depdendency('ticketID')
+            ticket_id: this.dependency('ticketID')
           }
         };
       }
@@ -52,7 +52,7 @@
         this.switchTo('list', { bookmarks: data.bookmarks });
       },
 
-      'addBookmark.success': function() {
+      'addBookmark.done': function() {
         this.services.notify('Bookmarked ticket #%@'.fmt(this.deps.ticketID));
       },
 
@@ -61,20 +61,20 @@
       },
 
       'click %welcome': function() {
-        App.ajax('fetchBookmarks');
+        this.ajax('fetchBookmarks');
       },
 
       'click .bookmark': function() {
-        App.ajax('addBookmark');
+        this.ajax('addBookmark');
       },
 
       'addBookmark.always': function(e, data) {
-        App.ajax('fetchBookmarks');
+        this.ajax('fetchBookmarks');
       }
     },
 
     requestBookmarks: function() {
-      App.ajax('fetchBookmarks');
+      this.ajax('fetchBookmarks');
     }
   });
 
