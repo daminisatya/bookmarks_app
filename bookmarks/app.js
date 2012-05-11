@@ -48,8 +48,8 @@
     events: {
       'app.activated': 'requestBookmarks',
 
-      'fetchBookmarks.done': function(e, data) {
-        App.switchTo('list', { bookmarks: data.bookmarks });
+      'fetchBookmarks.always': function(e, data) {
+        this.switchTo('list', { bookmarks: data.bookmarks });
       },
 
       'addBookmark.success': function() {
@@ -68,7 +68,7 @@
         App.ajax('addBookmark');
       },
 
-      'addBookmark.done': function(e, data) {
+      'addBookmark.always': function(e, data) {
         App.ajax('fetchBookmarks');
       }
     },
