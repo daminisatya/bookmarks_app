@@ -34,11 +34,11 @@
       },
 
       'addBookmark.done': function() {
-        this.services.notify('Bookmarked ticket #%@'.fmt(this.deps.ticketID));
+        services.notify(helpers.fmt('Bookmarked ticket #%@', this.deps.ticketID));
       },
 
       'addBookmark.fail': function() {
-        this.services.notify('Failed to bookmark ticket #%@'.fmt(this.deps.ticketID), 'error');
+        services.notify(helpers.fmt('Failed to bookmark ticket #%@', this.deps.ticketID), 'error');
       },
 
       'click %welcome': function() {
