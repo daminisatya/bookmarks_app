@@ -1,5 +1,4 @@
 <div data-sheet-name="bookmarks">
-  <h3>{{t "title"}}</h3><hr/>
   <ul>
     {{#bookmarks}}<li>
       <a href="#/tickets/{{ticket.nice_id}}">{{ticket.subject}}</a>

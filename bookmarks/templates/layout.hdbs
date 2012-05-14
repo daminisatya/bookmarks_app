@@ -1,2 +1,4 @@
-<div class="bookmarks_app" data-main>
+<div class="bookmarks_app">
+  <h3>{{t "app.name"}}</h3><hr/>
+  <div data-main></div>
 </div>
