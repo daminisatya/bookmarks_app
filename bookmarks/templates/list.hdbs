@@ -4,6 +4,6 @@
       <a href="#/tickets/{{ticket.nice_id}}">{{ticket.subject}}</a>
     </li>{{/bookmarks}}
   </ul>
-  {{^bookmarks}}{{t "none"}}{{/bookmarks}}
+  <p>{{^bookmarks}}{{t "none"}}{{/bookmarks}}</p>
   <button class="btn btn-inverse bookmark">{{t "bookmark_this_ticket"}}</button>
 </div>
