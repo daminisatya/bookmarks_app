@@ -12,6 +12,6 @@
   }
 </style>
 <div class="bookmarks_app">
-  <h3>{{t "app.name"}} <span class="logo"></span></h3><hr/>
+  <h3>{{setting "name"}} <span class="logo"></span></h3><hr/>
   <div data-main></div>
 </div>
