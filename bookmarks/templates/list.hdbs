@@ -5,5 +5,5 @@
     </li>{{/bookmarks}}
   </ul>
   {{^bookmarks}}{{t "none"}}{{/bookmarks}}
-  <button class="btn bookmark">{{t "bookmark_this_ticket"}}</button>
+  <button class="btn btn-inverse bookmark">{{t "bookmark_this_ticket"}}</button>
 </div>
