@@ -10,6 +10,18 @@
     height: 25px;
     width: 25px;
   }
+
+  .bookmarks_app li + li {
+    margin-top: 0.4em;
+  }
+
+  .bookmarks_app li .destroy {
+    visibility: hidden;
+  }
+
+  .bookmarks_app li:hover .destroy {
+    visibility: visible;
+  }
 </style>
 <div class="bookmarks_app">
   <h3>{{setting "name"}} <span class="logo"></span></h3><hr/>

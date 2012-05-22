@@ -5,6 +5,7 @@
   },
 
   "bookmark_this_ticket": "Bookmark This Ticket",
+  "delete_bookmark":      "Delete Bookmark",
   "loading":              "Loading",
-  "none":                 "Could not find any bookmarks."
+  "none":                 "No bookmarks"
 }
