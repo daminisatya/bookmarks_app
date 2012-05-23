@@ -4,7 +4,18 @@
    "name":        "Bookmarks"
   },
 
+  "add": {
+    "done":   "Bookmarked ticket #{{id}}",
+    "failed": "Failed to bookmark ticket #{{id}}"
+  },
+
+  "destroy": {
+    "done":   "Bookmark deleted!",
+    "failed": "Failed to delete bookmark"
+  },
+
   "bookmark_this_ticket": "Bookmark This Ticket",
+  "delete_bookmark":      "Delete Bookmark",
   "loading":              "Loading",
-  "none":                 "Could not find any bookmarks."
+  "none":                 "No bookmarks"
 }
