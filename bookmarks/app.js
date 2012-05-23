@@ -45,10 +45,10 @@
       },
 
       'addBookmark.done': function() {
-        services.notify(helpers.fmt('Bookmarked ticket #%@', this.dependency('ticketID')));
+        services.notify(this.I18n.t('add.done', { id: this.dependency('ticketID') }));
       },
       'addBookmark.fail': function() {
-        services.notify(helpers.fmt('Failed to bookmark ticket #%@', this.dependency('ticketID')), 'error');
+        services.notify(this.I18n.t('add.failed', { id: this.dependency('ticketID') }), 'error');
       },
 
       'click %welcome': function(event) {
@@ -76,13 +76,18 @@
         this.renderBookmarks(_.reject(this.bookmarks, function(b) {
           return b.id === idToDelete;
         }));
+        services.notify(this.I18n.t('destroy.done'));
+      },
+      'destroyBookmark.fail': function() {
+        services.notify(this.I18n.t('destroy.failed'), 'error');
       }
+
     },
 
     renderBookmarks: function(bookmarks) {
       this.bookmarks = bookmarks;
       this.switchTo('list', {
-        bookmarks: this.bookmarks,
+        bookmarks:            this.bookmarks,
         ticketIsBookmarkable: this.ticketIsBookmarkable()
       });
     },
