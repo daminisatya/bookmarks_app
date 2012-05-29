@@ -2,7 +2,7 @@
 
   var STATUS_CLOSED = 4;
 
-  return ZendeskApps.defineApp(ZendeskApps.Site.TICKET_SIDEBAR, {
+  return ZendeskApps.defineApp({
     appID: '/apps/01-bookmarks/versions/1.0.0',
 
     defaultState: 'loading',
