@@ -2,7 +2,7 @@
 
   var STATUS_CLOSED = 4;
 
-  return ZendeskApps.defineApp({
+  return {
     appID: '/apps/01-bookmarks/versions/1.0.0',
 
     defaultState: 'loading',
@@ -118,6 +118,6 @@
     bookmarkLI: function(id) {
       return this.$( helpers.fmt('li[data-bookmark-id="%@"]', id) );
     }
-  });
+  };
 
 }());
