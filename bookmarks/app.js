@@ -1,4 +1,4 @@
-(function(exports) {
+(function() {
 
   var STATUS_CLOSED = 4;
 
