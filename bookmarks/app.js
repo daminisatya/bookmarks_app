@@ -1,6 +1,6 @@
 (function() {
 
-  var STATUS_CLOSED = 4;
+  var STATUS_CLOSED = 'closed';
 
   return {
     appID: '/apps/01-bookmarks/versions/1.0.0',
@@ -17,7 +17,7 @@
           url: '/api/v1/bookmarks.json',
           type: 'POST',
           data: {
-            ticket_id: this.dependency('ticketID')
+            ticket_id: this.ticket().id()
           }
         };
       },
@@ -31,12 +31,6 @@
       }
     },
 
-    dependencies: {
-      ticketID: 'ticket.id',
-      ticketStatus: 'ticket.status',
-      ticketSubject: 'ticket.subject'
-    },
-
     events: {
       'app.activated': 'requestBookmarks',
 
@@ -45,10 +39,10 @@
       },
 
       'addBookmark.done': function() {
-        services.notify(this.I18n.t('add.done', { id: this.dependency('ticketID') }));
+        services.notify(this.I18n.t('add.done', { id: this.ticket().id() }));
       },
       'addBookmark.fail': function() {
-        services.notify(this.I18n.t('add.failed', { id: this.dependency('ticketID') }), 'error');
+        services.notify(this.I18n.t('add.failed', { id: this.ticket().id() }), 'error');
       },
 
       'click %welcome': function(event) {
@@ -93,10 +87,10 @@
     },
 
     ticketIsBookmarkable: function() {
-      var status = this.dependency('ticketStatus') || 0;
-      if ( status >= STATUS_CLOSED ) { return false; }
+      var status = this.ticket().status() || STATUS_CLOSED;
+      if ( status == STATUS_CLOSED ) { return false; }
 
-      var ticketID = this.dependency('ticketID'),
+      var ticketID = this.ticket().id(),
           alreadyBookmarked = _.any(this.bookmarks, function(b) {
             return b.ticket.nice_id === ticketID;
           });
