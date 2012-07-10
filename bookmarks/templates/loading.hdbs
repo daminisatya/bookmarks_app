@@ -1,3 +1,3 @@
-<div data-sheet-name="loading" class="loading">
+<div class="loading">
  {{t "loading"}}&hellip;
 </div>

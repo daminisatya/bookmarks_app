@@ -1,4 +1,4 @@
-<div data-sheet-name="bookmarks">
+<div>
   <ul>
     {{#bookmarks}}
       <li data-bookmark-id="{{id}}">
