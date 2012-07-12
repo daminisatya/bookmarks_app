@@ -3,8 +3,6 @@
   var STATUS_CLOSED = 'closed';
 
   return {
-    appID: '/apps/01-bookmarks/versions/1.0.0',
-
     defaultState: 'loading',
 
     requests: {
