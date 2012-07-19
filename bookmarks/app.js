@@ -32,7 +32,7 @@
     events: {
       'app.activated': 'requestBookmarks',
 
-      'fetchBookmarks.always': function(e, data) {
+      'fetchBookmarks.always': function(data) {
         this.renderBookmarks((data || {}).bookmarks);
       },
 
@@ -44,7 +44,7 @@
         services.notify(this.I18n.t('add.failed', { id: this.ticket().id() }), 'error');
       },
 
-      'addBookmark.always': function(e, data) {
+      'addBookmark.always': function() {
         this.ajax('fetchBookmarks');
       },
 
