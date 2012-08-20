@@ -1,7 +1,6 @@
 {
   "app": {
-   "description": "Access bookmarked tickets from our iPad & iPhone app",
-   "name":        "Bookmarks"
+   "description": "Access bookmarked tickets from our iPad & iPhone app"
   },
 
   "add": {
