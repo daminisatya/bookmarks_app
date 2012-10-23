@@ -3,6 +3,10 @@
    "description": "Access bookmarked tickets from our iPad & iPhone app"
   },
 
+  "fetch": {
+    "fail": "Error retrieving bookmarks"
+  },
+
   "add": {
     "done":   "Bookmarked ticket #{{id}}",
     "failed": "Failed to bookmark ticket #{{id}}"

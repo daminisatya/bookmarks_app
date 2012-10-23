@@ -32,8 +32,12 @@
     events: {
       'app.activated': 'requestBookmarks',
 
-      'fetchBookmarks.always': function(data) {
+      'fetchBookmarks.done': function(data) {
         this.renderBookmarks((data || {}).bookmarks);
+      },
+
+      'fetchBookmarks.fail': function(data) {
+        this.switchTo('fetch_fail');
       },
 
       'addBookmark.done': function() {
