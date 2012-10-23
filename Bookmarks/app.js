@@ -57,7 +57,9 @@
         this.ajax('addBookmark');
       },
 
-      'click .destroy': 'destroyBookmark'
+      'click .destroy': 'destroyBookmark',
+
+      'click a[data-role="reload-bookmarks"]': 'requestBookmarks'
     },
 
     renderBookmarks: function(bookmarks) {

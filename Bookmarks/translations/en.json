@@ -4,7 +4,8 @@
   },
 
   "fetch": {
-    "fail": "Error retrieving bookmarks"
+    "fail": "Error retrieving bookmarks",
+    "try_again": "Try again"
   },
 
   "add": {
