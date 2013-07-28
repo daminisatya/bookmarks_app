@@ -28,7 +28,7 @@ parts:
   - translation:
       key: "txt.apps.bookmarks_app.destroy.done"
       title: "Success message"
-      value: "Bookmark deleted!"
+      value: "Bookmark deleted"
   - translation:
       key: "txt.apps.bookmarks_app.destroy.failed"
       title: "Error message"
@@ -36,11 +36,11 @@ parts:
   - translation:
       key: "txt.apps.bookmarks_app.bookmark_this_ticket"
       title: "Button to ask the user to bookmark the current viewed ticket"
-      value: "Bookmark This Ticket"
+      value: "Bookmark this ticket"
   - translation:
       key: "txt.apps.bookmarks_app.delete_bookmark"
       title: "delete link to remove bookmarking"
-      value: "Delete Bookmark"
+      value: "Delete bookmark"
   - translation:
       key: "txt.apps.bookmarks_app.loading"
       title: "loading text"
