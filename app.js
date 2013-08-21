@@ -1,7 +1,5 @@
 (function() {
 
-  var STATUS_CLOSED = 'closed';
-
   return {
     defaultState: 'loading',
 
@@ -71,13 +69,15 @@
     },
 
     ticketIsBookmarkable: function() {
-      var status = this.ticket().status() || STATUS_CLOSED;
-      if ( status == STATUS_CLOSED ) { return false; }
+      var status = this.ticket().status();
+      if ( status == null ) { return false; }
 
-      var ticketID = this.ticket().id(),
-          alreadyBookmarked = _.any(this.bookmarks, function(b) {
-            return b.ticket.nice_id === ticketID;
-          });
+      var ticketID = this.ticket().id();
+      if ( ticketID == null ) { return false; }
+
+      var alreadyBookmarked = _.any(this.bookmarks, function(b) {
+        return b.ticket.nice_id === ticketID;
+      });
 
       return !alreadyBookmarked;
     },
