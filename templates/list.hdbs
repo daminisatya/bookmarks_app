@@ -5,7 +5,7 @@
         <a href="#/bookmarks/{{id}}/destroy" class="destroy" rel="nofollow" title="{{t "delete_bookmark"}}">
           <i class='icon-remove-circle'></i>
         </a>
-        <a href="#/tickets/{{ticket.nice_id}}">{{ticket.subject}}</a>
+        <a href="#/tickets/{{ticket.id}}">{{ticket.subject}}</a>
       </li>
     {{/bookmarks}}
   </ul>
