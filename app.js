@@ -7,12 +7,12 @@
 
     requests: {
       fetchBookmarks: {
-        url: '/api/v1/bookmarks.json'
+        url: '/api/v2/bookmarks.json'
       },
 
       addBookmark: function() {
         return {
-          url: '/api/v1/bookmarks.json',
+          url: '/api/v2/bookmarks.json',
           type: 'POST',
           data: {
             ticket_id: this.ticket().id()
@@ -22,7 +22,7 @@
 
       destroyBookmark: function(toDestroy) {
         return {
-          url: helpers.fmt('/api/v1/bookmarks/%@.json', toDestroy),
+          url: helpers.fmt('/api/v2/bookmarks/%@.json', toDestroy),
           type: 'POST',
           data: { _method: 'DELETE' }
         };
