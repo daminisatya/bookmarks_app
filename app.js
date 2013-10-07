@@ -15,7 +15,9 @@
           url: '/api/v2/bookmarks.json',
           type: 'POST',
           data: {
-            ticket_id: this.ticket().id()
+            bookmark: {
+              ticket_id: this.ticket().id()
+            }
           }
         };
       },
