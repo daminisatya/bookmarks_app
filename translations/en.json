@@ -1,21 +1,54 @@
 {
   "app": {
-    "description": "Access bookmarked tickets from our iPad & iPhone app"
+    "description": {
+      "value": "Access bookmarked tickets from our iPad & iPhone app",
+      "title": "app description"
+    }
   },
   "fetch": {
-    "fail": "Error retrieving bookmarks",
-    "try_again": "Try again"
+    "fail": {
+      "value": "Error retrieving bookmarks",
+      "title": "Error message"
+    },
+    "try_again": {
+      "value": "Try again",
+      "title": "button to try again"
+    }
   },
   "add": {
-    "done": "Bookmarked ticket #{{id}}",
-    "failed": "Failed to bookmark ticket #{{id}}"
+    "done": {
+      "value": "Bookmarked ticket #{{id}}",
+      "title": "Success message the placeholder in here displays a ticket number"
+    },
+    "failed": {
+      "value": "Failed to bookmark ticket #{{id}}",
+      "title": "Error message the placeholder displays a ticket number"
+    }
   },
   "destroy": {
-    "done": "Bookmark deleted",
-    "failed": "Failed to delete bookmark"
+    "done": {
+      "value": "Bookmark deleted",
+      "title": "Success message"
+    },
+    "failed": {
+      "value": "Failed to delete bookmark",
+      "title": "Error message"
+    }
   },
-  "bookmark_this_ticket": "Bookmark this ticket",
-  "delete_bookmark": "Delete bookmark",
-  "loading": "Loading",
-  "none": "No bookmarks"
+  "bookmark_this_ticket": {
+    "value": "Bookmark this ticket",
+    "title": "Button to ask the user to bookmark the current viewed ticket"
+  },
+  "delete_bookmark": {
+    "value": "Delete bookmark",
+    "title": "delete link to remove bookmarking"
+  },
+  "loading": {
+    "value": "Loading",
+    "title": "loading text"
+  },
+  "none": {
+    "value": "No bookmarks",
+    "title": "text displayed when there is nothing"
+  }
 }
