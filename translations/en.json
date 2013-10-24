@@ -1,5 +1,6 @@
 {
   "app": {
+    "package": "bookmarks_app",
     "description": {
       "value": "Access bookmarked tickets from our iPad & iPhone app",
       "title": "app description"
