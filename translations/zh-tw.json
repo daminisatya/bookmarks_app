@@ -1,0 +1,21 @@
+{
+  "app": {
+    "description": "從我們的 iPad 和 iPhone app 存取已新增書籤的工單"
+  },
+  "fetch": {
+    "fail": "擷取書籤出錯",
+    "try_again": "請再試一次"
+  },
+  "add": {
+    "done": "已新增書籤的工單 #{{id}}",
+    "failed": "新增工單 #{{id}} 的書籤失敗"
+  },
+  "destroy": {
+    "done": "已刪除書籤",
+    "failed": "刪除書籤失敗"
+  },
+  "bookmark_this_ticket": "新增此工單的書籤",
+  "delete_bookmark": "刪除書籤",
+  "loading": "載入中",
+  "none": "無書籤"
+}

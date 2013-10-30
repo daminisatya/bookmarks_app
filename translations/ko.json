@@ -1,0 +1,21 @@
+{
+  "app": {
+    "description": "iPad 및 iPhone 앱에서 북마크된 티켓에 액세스"
+  },
+  "fetch": {
+    "fail": "북마크 검색 중 오류가 발생했습니다",
+    "try_again": "다시 시도하십시오"
+  },
+  "add": {
+    "done": "북마크된 티켓 #{{id}}",
+    "failed": "티켓 #{{id}}을(를) 북마크하지 못했습니다"
+  },
+  "destroy": {
+    "done": "북마크를 삭제했습니다",
+    "failed": "북마크를 삭제하지 못했습니다"
+  },
+  "bookmark_this_ticket": "이 티켓 북마크",
+  "delete_bookmark": "북마크 삭제",
+  "loading": "로드하는 중",
+  "none": "북마크 없음"
+}

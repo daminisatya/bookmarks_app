@@ -1,0 +1,21 @@
+{
+  "app": {
+    "description": "Tickets met bladwijzer openen vanaf onze iPad & iPhone-app"
+  },
+  "fetch": {
+    "fail": "Fout bij het ophalen van bladwijzers",
+    "try_again": "Probeer het opnieuw"
+  },
+  "add": {
+    "done": "Ticket met bladwijzer #{{id}}",
+    "failed": "Kan geen bladwijzer maken voor ticket #{{id}}"
+  },
+  "destroy": {
+    "done": "Bladwijzer verwijderd",
+    "failed": "Kan bladwijzer niet verwijderen"
+  },
+  "bookmark_this_ticket": "Bladwijzer voor dit ticket maken",
+  "delete_bookmark": "Bladwijzer verwijderen",
+  "loading": "Laden",
+  "none": "Geen bladwijzers"
+}
