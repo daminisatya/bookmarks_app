@@ -1,21 +1,21 @@
 {
   "app": {
-    "description": "Tag adgang til bogmærmede tickets fra vores iPad- og iPhone-applikation"
+    "description": "Få tilgang til saker med bokmerke fra iPad- og iPhone-appen vår"
   },
   "fetch": {
-    "fail": "Fejl ved modtagelse af bogmærker",
-    "try_again": "Prøv igen"
+    "fail": "Feil under henting av bokmerker",
+    "try_again": "Prøv på nytt"
   },
   "add": {
-    "done": "Bogmærket ticket nr.#{{id}}",
-    "failed": "Kunne ikke bogmærke ticket nr.#{{id}}"
+    "done": "Sak med bokmerke #{{id}}",
+    "failed": "Kan ikke legge til bokmerke til saken #{{id}}"
   },
   "destroy": {
-    "done": "Bogmærke slettet",
-    "failed": "Kunne ikke slette bogmærke "
+    "done": "Bokmerke ble slettet",
+    "failed": "Kan ikke slette bokmerke"
   },
-  "bookmark_this_ticket": "Bogmærk denne ticket",
-  "delete_bookmark": "Slet bogmærke",
-  "loading": "Indlæser",
-  "none": "Ingen bogmærker"
+  "bookmark_this_ticket": "Legg til bokmerke til saken",
+  "delete_bookmark": "Slett bokmerke",
+  "loading": "Laster",
+  "none": "Ingen bokmerker"
 }
