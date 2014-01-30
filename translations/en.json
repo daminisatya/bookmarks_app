@@ -1,55 +1,55 @@
 {
   "app": {
-    "package": "bookmarks_app",
     "description": {
-      "value": "Access bookmarked tickets from our iPad & iPhone app",
-      "title": "app description"
-    }
+      "title": "app description",
+      "value": "Access bookmarked tickets from our iPad & iPhone app"
+    },
+    "package": "bookmarks_app"
   },
   "fetch": {
     "fail": {
-      "value": "Error retrieving bookmarks",
-      "title": "Error message"
+      "title": "Error message",
+      "value": "Error retrieving bookmarks"
     },
     "try_again": {
-      "value": "Try again",
-      "title": "button to try again"
+      "title": "button to try again",
+      "value": "Try again"
     }
   },
   "add": {
     "done": {
-      "value": "Bookmarked ticket #{{id}}",
-      "title": "Success message the placeholder in here displays a ticket number"
+      "title": "Success message the placeholder in here displays a ticket number",
+      "value": "Bookmarked ticket #{{id}}"
     },
     "failed": {
-      "value": "Failed to bookmark ticket #{{id}}",
-      "title": "Error message the placeholder displays a ticket number"
+      "title": "Error message the placeholder displays a ticket number",
+      "value": "Failed to bookmark ticket #{{id}}"
     }
   },
   "destroy": {
     "done": {
-      "value": "Bookmark deleted",
-      "title": "Success message"
+      "title": "Success message",
+      "value": "Bookmark deleted"
     },
     "failed": {
-      "value": "Failed to delete bookmark",
-      "title": "Error message"
+      "title": "Error message",
+      "value": "Failed to delete bookmark"
     }
   },
   "bookmark_this_ticket": {
-    "value": "Bookmark this ticket",
-    "title": "Button to ask the user to bookmark the current viewed ticket"
+    "title": "Button to ask the user to bookmark the current viewed ticket",
+    "value": "Bookmark this ticket"
   },
   "delete_bookmark": {
-    "value": "Delete bookmark",
-    "title": "delete link to remove bookmarking"
+    "title": "delete link to remove bookmarking",
+    "value": "Delete bookmark"
   },
   "loading": {
-    "value": "Loading",
-    "title": "loading text"
+    "title": "loading text",
+    "value": "Loading"
   },
   "none": {
-    "value": "No bookmarks",
-    "title": "text displayed when there is nothing"
+    "title": "text displayed when there is nothing",
+    "value": "No bookmarks"
   }
 }

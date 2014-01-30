@@ -7,7 +7,7 @@
     "try_again": "Erneut versuchen"
   },
   "add": {
-    "done": "Als Lesezeichen gespeichertes Ticket #{{id}}",
+    "done": "Ticket #{{id}} als Lesezeichen gespeichert",
     "failed": "Fehler beim Speichern des Tickets #{{id}} als Lesezeichen"
   },
   "destroy": {
