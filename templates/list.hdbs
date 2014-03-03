@@ -11,7 +11,7 @@
   </ul>
 
   {{#unless bookmarks.length}}
-    <p>{{t "none"}}}</p>
+    <p>{{t "none"}}</p>
   {{/unless}}
 
   {{#if ticketIsBookmarkable}}
