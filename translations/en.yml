@@ -3,7 +3,6 @@ title: "Bookmarks app"
 packages:
   - default
   - app_bookmarks_app
-  - classic
 
 parts:
   - translation:
