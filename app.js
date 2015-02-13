@@ -78,7 +78,7 @@
       if ( ticketID == null ) { return false; }
 
       var alreadyBookmarked = _.any(this.bookmarks, function(b) {
-        return b.ticket.nice_id === ticketID;
+        return b.ticket.id === ticketID;
       });
 
       return !alreadyBookmarked;
