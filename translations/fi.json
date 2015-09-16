@@ -1,0 +1,21 @@
+{
+  "app": {
+    "description": "Avaa kirjanmerkillä merkittyjä tikettejä iPad- &amp; iPhone-sovelluksesta"
+  },
+  "fetch": {
+    "fail": "Virhe haettaessa kirjanmerkkejä",
+    "try_again": "Yritä uudelleen"
+  },
+  "add": {
+    "done": "Kirjanmerkillä merkitty tiketti #{{id}}",
+    "failed": "Kirjanmerkin lisääminen tikettiin epäonnistui #{{id}}"
+  },
+  "destroy": {
+    "done": "Kirjanmerkki poistettu",
+    "failed": "Kirjanmerkin poistaminen epäonnistui"
+  },
+  "bookmark_this_ticket": "Lisää kirjanmerkki tähän tikettiin",
+  "delete_bookmark": "Poista kirjanmerkki",
+  "loading": "Lataa",
+  "none": "Ei kirjanmerkkejä"
+}

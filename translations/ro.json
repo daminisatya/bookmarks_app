@@ -1,0 +1,21 @@
+{
+  "app": {
+    "description": "Accesaţi tichetele cu semn de carte din aplicaţia noastră pentru iPad şi iPhone"
+  },
+  "fetch": {
+    "fail": "Eroare la recuperarea semnelor de carte",
+    "try_again": "Încercaţi din nou"
+  },
+  "add": {
+    "done": "Tichet cu semn de carte #{{id}}",
+    "failed": "A eşuat marcarea cu semn de carte a tichetului #{{id}}"
+  },
+  "destroy": {
+    "done": "Semn de carte şters",
+    "failed": "Ştergerea semnului de carte a eşuat"
+  },
+  "bookmark_this_ticket": "Marcaţi acest tichet cu semn de carte",
+  "delete_bookmark": "Ştergere semn de carte",
+  "loading": "Se încarcă",
+  "none": "Fără semne de carte"
+}

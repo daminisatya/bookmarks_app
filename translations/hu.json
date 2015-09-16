@@ -1,0 +1,21 @@
+{
+  "app": {
+    "description": "Hozzáférés akönyvjelzővé nyilvánított jegyekhez a saját iPad és iPhone alkalmazás részére"
+  },
+  "fetch": {
+    "fail": "Hiba a könyvjelzők visszakeresése közben",
+    "try_again": "Próbálja újra"
+  },
+  "add": {
+    "done": "Jegy #{{id}} hozzáadása a könyvjelzőkhöz",
+    "failed": "Nem sikerült könyvjelzőt készíteni a jegyből #{{id}}"
+  },
+  "destroy": {
+    "done": "Könyvjelző törölve",
+    "failed": "Könyvjelző törlése sikertelen"
+  },
+  "bookmark_this_ticket": "Jegy kövjelzőkhöz adása",
+  "delete_bookmark": "Könyvjelző törlése",
+  "loading": "töltés",
+  "none": "Nincsenek könyvjelzők"
+}

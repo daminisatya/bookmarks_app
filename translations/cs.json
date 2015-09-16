@@ -1,0 +1,21 @@
+{
+  "app": {
+    "description": "Získejte přístup k tiketům označeným záložkou z naší aplikace pro iPad a iPhone"
+  },
+  "fetch": {
+    "fail": "Chyba při načítání záložek",
+    "try_again": "Zkusit znovu"
+  },
+  "add": {
+    "done": "Tiket #{{id}} označený záložkou ",
+    "failed": "Nepovedlo se označit záložkou tiket #{{id}}"
+  },
+  "destroy": {
+    "done": "Záložka byla vymazána",
+    "failed": "Nepovedlo se vymazat záložku"
+  },
+  "bookmark_this_ticket": "Označit záložkou tento tiket",
+  "delete_bookmark": "Vymazat záložku",
+  "loading": "Načítání",
+  "none": "Nejsou žádné záložky"
+}

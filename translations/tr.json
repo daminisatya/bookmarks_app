@@ -1,21 +1,21 @@
 {
   "app": {
-    "description": "Access bookmarked tickets from our iPad & iPhone app"
+    "description": "Yer işaretli kayıtlara iPad &amp; iPhone uygulamalarımızdan erişin"
   },
   "fetch": {
-    "fail": "Error retrieving bookmarks",
-    "try_again": "Try again"
+    "fail": "Yer işaretlerine erişme hatası",
+    "try_again": "Tekrar deneyin"
   },
   "add": {
-    "done": "Bookmarked ticket #{{id}}",
-    "failed": "Failed to bookmark ticket #{{id}}"
+    "done": "Yer işaretli kayıt #{{id}}",
+    "failed": "Kayıt #{{id}} işaretlenemedi"
   },
   "destroy": {
-    "done": "Bookmark deleted",
-    "failed": "Failed to delete bookmark"
+    "done": "Yer işareti silindi",
+    "failed": "Yer işareti silinemedi"
   },
-  "bookmark_this_ticket": "Bookmark this ticket",
-  "delete_bookmark": "Delete bookmark",
-  "loading": "Loading",
-  "none": "No bookmarks"
+  "bookmark_this_ticket": "Bu kaydı işaretle",
+  "delete_bookmark": "Yer işaretini sil",
+  "loading": "Yükleniyor",
+  "none": "Yer işareti yok"
 }

@@ -1,21 +1,21 @@
 {
   "app": {
-    "description": "Access bookmarked tickets from our iPad & iPhone app"
+    "description": "Använd bokmärkta ärenden från vår app för iPad och iPhone"
   },
   "fetch": {
-    "fail": "Error retrieving bookmarks",
-    "try_again": "Try again"
+    "fail": "Det gick inte att hämta bokmärken",
+    "try_again": "Försök igen"
   },
   "add": {
-    "done": "Bookmarked ticket #{{id}}",
-    "failed": "Failed to bookmark ticket #{{id}}"
+    "done": "Bokmärkt ärende #{{id}}",
+    "failed": "Det gick inte att bokmärka ärendet #{{id}}"
   },
   "destroy": {
-    "done": "Bookmark deleted",
-    "failed": "Failed to delete bookmark"
+    "done": "Bokmärke borttaget",
+    "failed": "Det gick inte att ta bort bokmärket"
   },
-  "bookmark_this_ticket": "Bookmark this ticket",
-  "delete_bookmark": "Delete bookmark",
-  "loading": "Loading",
-  "none": "No bookmarks"
+  "bookmark_this_ticket": "Bokmärk detta ärende",
+  "delete_bookmark": "Ta bort bokmärke",
+  "loading": "Läser in",
+  "none": "Inga bokmärken"
 }
