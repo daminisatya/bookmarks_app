@@ -1,6 +1,6 @@
 {
   "app": {
-    "description": "Access bookmarked tickets from our iPad & iPhone app"
+    "description": "Access bookmarked tickets from our iPad &amp; iPhone app"
   },
   "fetch": {
     "fail": "Error retrieving bookmarks",

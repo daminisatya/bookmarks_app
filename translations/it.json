@@ -1,6 +1,6 @@
 {
   "app": {
-    "description": "Accedi ai segnalibri dei ticket dall'app per iPad e iPhone"
+    "description": "Accedi ai segnalibri dei ticket dall’app per iPad e iPhone"
   },
   "fetch": {
     "fail": "Errore nello scaricare i segnalibri",

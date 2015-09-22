@@ -1,0 +1,21 @@
+{
+  "app": {
+    "description": "Nasza aplikacja dla iPada i iPhone'a daje dostęp do zgłoszeń dodanych do zakładek"
+  },
+  "fetch": {
+    "fail": "Podczas pobierania zakładek wystąpił błąd",
+    "try_again": "Spróbuj ponownie"
+  },
+  "add": {
+    "done": "Zgłoszenie #{{id}} dodano do zakładek",
+    "failed": "Nie można dodać zgłoszenia #{{id}} do zakładek"
+  },
+  "destroy": {
+    "done": "Zakładka usunięta",
+    "failed": "Nie można usunąć zakładki"
+  },
+  "bookmark_this_ticket": "Dodaj to zgłoszenie do zakładek",
+  "delete_bookmark": "Usuń zakładkę",
+  "loading": "Ładowanie",
+  "none": "Brak zakładek"
+}
