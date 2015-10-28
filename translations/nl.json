@@ -1,6 +1,6 @@
 {
   "app": {
-    "description": "Tickets met bladwijzer openen vanaf onze iPad &amp; iPhone-app"
+    "description": "Tickets met bladwijzer openen vanaf onze iPad & iPhone-app"
   },
   "fetch": {
     "fail": "Fout bij het ophalen van bladwijzers",

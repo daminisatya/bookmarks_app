@@ -1,6 +1,6 @@
 {
   "app": {
-    "description": "Avaa kirjanmerkillä merkittyjä tikettejä iPad- &amp; iPhone-sovelluksesta"
+    "description": "Avaa kirjanmerkillä merkittyjä tikettejä iPad- & iPhone-sovelluksesta"
   },
   "fetch": {
     "fail": "Virhe haettaessa kirjanmerkkejä",
