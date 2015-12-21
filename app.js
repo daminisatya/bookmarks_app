@@ -64,6 +64,9 @@
 
     renderBookmarks: function(bookmarks) {
       this.bookmarks = bookmarks;
+      this.bookmarks.forEach(function(bookmark) {
+        bookmark.ticket.subject = bookmark.ticket.subject || bookmark.ticket.description;
+      });
       this.switchTo('list', {
         bookmarks:            this.bookmarks,
         ticketIsBookmarkable: this.ticketIsBookmarkable()

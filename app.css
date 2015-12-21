@@ -1,5 +1,6 @@
 ul {
   margin-left: 0;
+  margin-right: 10px;
 }
 
 footer {
@@ -7,6 +8,10 @@ footer {
 }
 
 li {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+
   & + li { margin-top: 0.4em; }
 
           .destroy { visibility: hidden; }
